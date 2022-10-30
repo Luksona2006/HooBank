@@ -68,6 +68,10 @@ body {
     background: #00040F;
 }
 
+button {
+    cursor: pointer;
+}
+
 .container {
     width: 1600px;  
     max-width: 100%;
@@ -80,10 +84,7 @@ body {
     font-weight: 600;
     font-size: 72px;
     line-height: 140%;
-    /* or 101px */
-
     letter-spacing: 0.01em;
-
     color: #FFFFFF;
 }
 
@@ -93,7 +94,6 @@ body {
     font-weight: 600;
     font-size: 72px;
     line-height: 140%;
-
     letter-spacing: 0.01em;
 
     background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
@@ -108,10 +108,7 @@ body {
     font-weight: 600;
     font-size: 48px;
     line-height: 160%;
-    /* or 77px */
-
     letter-spacing: 0.01em;
-
     color: #FFFFFF;
 }
 
@@ -131,7 +128,6 @@ body {
     font-size: 24px;
     line-height: 160%;
     letter-spacing: 0.01em;
-
     color: #FFFFFF;
 }
 
@@ -141,7 +137,6 @@ body {
     font-weight: 600;
     font-size: 22px;
     line-height: 22px;
-
     color: #FFFFFF;
 }
 
@@ -160,7 +155,6 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 170%;
-
     color: #ffffff;
 }
 
@@ -170,7 +164,6 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    
     color:#ffffff;
 }
 
@@ -181,7 +174,6 @@ body {
     font-weight: 600;
     font-size: 18px;
     line-height: 150%;
-    
     color:#5CE1E6;
 }
 .poppins-18WB600 {
@@ -191,8 +183,6 @@ body {
     font-size: 18px;
     line-height: 130%;
     letter-spacing: 0.01em;
-    text-transform: capitalize;
-
     color: #FFFFFF;
 
 } 
@@ -203,7 +193,6 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 170%;
-
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -213,9 +202,6 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 130%;
-    /* or 27px */
-
-    text-transform: uppercase;
 
     background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     -webkit-background-clip: text;
@@ -229,11 +215,8 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 160%;
-    /* identical to box height, or 26px */
-
     text-align: center;
     letter-spacing: 0.01em;
-
     color: #FFFFFF;
 }
 
@@ -243,7 +226,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -254,7 +236,6 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
-
     opacity: 0.5;
 }
 
@@ -264,7 +245,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-
     color: #FFFFFF;
 }
 
@@ -275,7 +255,6 @@ body {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.01em;
-
     color: #080915;
 }
 
@@ -286,7 +265,6 @@ body {
     font-size: 12px;
     line-height: 160%;
     letter-spacing: 0.01em;
-
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -296,8 +274,6 @@ body {
     font-weight: 500;
     font-size: 12px;
     line-height: 140%;
-    text-transform: capitalize;
-
     color: #00D2AA;
 }
 
@@ -307,11 +283,37 @@ body {
     font-weight: 500;
     font-size: 12px;
     line-height: 140%;
-    text-transform: capitalize;
-
     color: #00D9F5;
 }
 
+.poppins-10W {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
+    color: #FFFFFF;
+
+}
+
+.poppins-9GR {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 140%;
+    color: rgba(0, 210, 170, 0.7);
+}
+
+.poppins-9B {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 140%;
+    color: rgba(0, 217, 245, 0.7);
+
+}
 /* NAVIGATION */
 
 .logo {
@@ -319,6 +321,7 @@ body {
     gap: 4px;
     align-items: center;
 }
+
 
 nav {
     display: flex;
@@ -335,6 +338,7 @@ nav {
 
 #navLinks ul li{
     transition: 0.3s all ease-in;
+    z-index: 999 !important;
 }
 
 #navLinks ul li:hover {
@@ -367,10 +371,14 @@ nav {
         transition: 1s all ease-in-out;
     }
 
-    #navLinks ul{
+    #navLinks ul {
         flex-direction: column;
-        gap: 40px;
-        margin-top: 40px;
+        gap: 72px;
+        margin-top: 120px;
+    }
+
+    #navLinks ul li a {
+        font-size: 24px;
     }
 
     nav {
@@ -417,7 +425,6 @@ nav {
 }
 
 .button-circle {
-    cursor: pointer;
     background: transparent;
     border-radius: 10px;
     font-family: 'Poppins';
@@ -578,7 +585,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 110.5px;
+    padding: 0 102px;
     margin: 100px auto 0 auto;
 }
 
@@ -616,8 +623,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px auto 0 auto;
-    padding: 0px 110.5px;
+    margin: 120px auto 0 auto;
+    padding: 0 102px
 }
 
 .business-textbox{
@@ -637,7 +644,6 @@ nav {
 }
 
 .button-getstarted {
-    cursor: pointer;
     background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
 
     border-radius: 10px;
@@ -697,7 +703,7 @@ nav {
 @media (max-width: 1240px) {
     .business {
         flex-direction: column;
-        gap: 40px;
+        gap: 80px;
     }
 
     .business-textbox {
@@ -738,7 +744,7 @@ nav {
     align-items: flex-end;
     justify-content: space-between;
     margin: 280px auto 0 auto;
-    padding: 0px 110.5px;
+    padding: 0 102px;
 }
 
 .transactions {
@@ -789,7 +795,6 @@ nav {
 }
 
 .button-paymant {
-    cursor: pointer;
     width: 100%;
     padding: 8px 0;
     
@@ -814,7 +819,6 @@ nav {
 }
 
 .button-change {
-    cursor: pointer;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -905,7 +909,7 @@ nav {
         flex-direction: column-reverse;
         align-items: center;
         gap: 200px;
-        margin: 80px auto 0 auto;
+        margin: 120px auto 0 auto;
     }
     .transactions {
         margin-right: 100px;
@@ -918,7 +922,7 @@ nav {
 
 @media(max-width: 800px) {
     .billing {
-        gap: 280px;
+        gap: 320px;
     }
     .notify {
         position: absolute;
@@ -946,6 +950,465 @@ nav {
     }
 }
 
+/* SECTION 4 */
+
+.methods {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 280px auto 0 auto;
+    padding: 0px 110.5px;
+}
+
+.circle {
+    position: relative;
+    margin-right: 100px;
+}
+
+.step-box {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.step-box h2 {
+    max-width: 570px;
+}
+
+.step-box p {
+    max-width: 500px;
+}
+
+.scan {
+    position: absolute;
+    left: -20%;
+    top: 40%;
+    transform: translate(0, -40%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(113.08deg, #FFFFFF -242.51%, #14101D 85.56%);
+    box-shadow: inset -0.243217px -0.243217px 0.364826px rgba(0, 0, 0, 0.36);
+    backdrop-filter: blur(15.2011px);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.scan div {
+    padding: 4px;
+    background: #00030C;
+    border-radius: 10px;
+}
+
+.scan span {
+    max-width: 151px;
+    text-align: center;
+}
+
+.graphic {
+    position: absolute;
+    right: -30%;
+    top: 40%;
+    transform: translate(0, -40%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    background: linear-gradient(113.08deg, #FFFFFF -242.51%, #14101D 85.56%);
+    box-shadow: inset -0.243217px -0.243217px 0.364826px rgba(0, 0, 0, 0.36);
+    backdrop-filter: blur(15.2011px);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title button {
+    background-color: transparent;
+    border: none;
+}
+
+.income {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.months {
+    display: flex;
+    align-items: center;
+}
+.months button {
+    background-color: transparent;
+    border: none;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
+    /* identical to box height, or 13px */
+
+    text-transform: capitalize;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.months button:nth-child(3) {
+    padding: 4px;
+    background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+    border-radius: 5px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
+    color: #14101D;
+}
 
 
+.pay-methods {
+    position: absolute;
+    right: 50%;
+    bottom: -30%;
+    transform: translate(50%,-30%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    background: linear-gradient(113.08deg, #FFFFFF -242.51%, #14101D 85.56%);
+    box-shadow: inset -0.243217px -0.243217px 0.364826px rgba(0, 0, 0, 0.36);
+    backdrop-filter: blur(15.2011px);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.wallets {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+@media (max-width:1240px) {
+    .methods {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        margin: 160px auto 0 auto;
+        padding: 0px 40px;
+    }
+
+    .circle {
+        margin-right: 20px;
+    }
+
+    .step-box {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 640px) {
+
+    .circle {
+        margin-top: 100px;
+    }
+    .circle-img {
+        width: 336px;
+    }
+
+    .scan {
+        position: absolute;
+        right: 60%;
+        top: 60%;
+        transform: translate(50%, -60%);
+    }
+
+    .graphic {
+        position: absolute;
+        right: -2%;
+        top: -20%;
+        transform: translate(0, -20%);
+    }
+    .pay-methods {
+        position: absolute;
+        right: -2%;
+        bottom: -25%;
+        transform: translate(0, -20%);
+    }
+}
+
+/* SECTION 4 */
+
+.people {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 280px auto 0 auto;
+    padding: 0 102px;
+}
+
+.people-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.people-title h2 {
+    max-width: 472px;
+    width: 100%;
+}
+
+.people-title p {
+    max-width: 456px;
+    width: 100%;
+}
+
+.comments {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 60px 40px;
+}
+
+.person p {
+    max-width: 292px;
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.profile img {
+    width: 60px;
+}
+
+.quotes-non {
+    display: none;
+}
+
+
+
+.grey {
+    background: linear-gradient(113.08deg, #FFFFFF -242.51%, #14101D 85.56%);
+    box-shadow: inset -0.243217px -0.243217px 0.364826px rgba(0, 0, 0, 0.36);
+    backdrop-filter: blur(15.2011px);
+    border-radius: 20px;
+}
+
+@media (max-width: 1336px) {
+    .people-title {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:970px) {
+    .people {
+        margin: 160px auto 0 auto;
+        padding: 0px 40px;
+    }
+    .comments {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+    
+    
+}
+
+@media (max-width: 970px) {
+    .person {
+        flex-direction: column-reverse;
+    }
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quotes-non {
+        display: block;
+    }
+    .quotes {
+        display: none;
+    }
+}
+
+.companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    margin: 100px auto 0 auto;
+    padding: 0 80px;
+}
+
+@media (max-width: 970px) {
+    .companies {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+.banner-wraper {
+    padding: 0 80px;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+    padding: 92px 72px;
+    background: linear-gradient(-160deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+
+}
+
+.banner p {
+    max-width: 444px;
+}
+
+@media (max-width: 800px) {
+    .banner-wraper {
+        padding: 0 20px;
+    }
+    .banner div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background: rgba(11, 10, 12, 0.6);
+    padding-top: 72px;
+}
+
+.footer-wraper {
+    padding: 0 80px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    gap: 80px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-left p {
+    max-width: 312px;
+}
+
+.footer-right {
+    max-width: 588px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+.footer-right ul li a {
+    transition: 0.2s all ease-out;
+}
+
+.footer-right ul li a:hover {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color:  #3F3E45;
+    margin-top: 56px;
+}
+
+.footer-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 8px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.social-media a svg path {
+    transition: 0.4s all ease-out;
+}
+
+.social-media a:hover svg path {
+    fill: #00D9F5;
+}
+
+@media (max-width: 1000px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .footer-left {
+        text-align: center;
+    }
+}
+
+@media (max-width: 630px) {
+    .footer-right {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-down {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 28px;
+    }
+    
+}
 
