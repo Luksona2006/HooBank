@@ -496,7 +496,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 40px;
+        padding: 20px;
     }
 
     .relative-robot {
@@ -562,7 +562,7 @@ nav {
 @media(max-width: 420px) {
     .text-box:nth-child(1) div {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         gap: 4px;
     }
 
@@ -579,7 +579,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 110.5px;
-    margin: 60px auto 0 auto;
+    margin: 100px auto 0 auto;
 }
 
 .about-divs div {
@@ -616,7 +616,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 140px auto 0 auto;
+    margin: 100px auto 0 auto;
     padding: 0px 110.5px;
 }
 
@@ -744,6 +744,7 @@ nav {
 .transactions {
     position: relative;
     max-width: 295px;
+    min-width: 257px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -904,6 +905,7 @@ nav {
         flex-direction: column-reverse;
         align-items: center;
         gap: 200px;
+        margin: 80px auto 0 auto;
     }
     .transactions {
         margin-right: 100px;
@@ -911,6 +913,36 @@ nav {
     .download {
         align-items: center;
         text-align: center;
+    }
+}
+
+@media(max-width: 800px) {
+    .billing {
+        gap: 280px;
+    }
+    .notify {
+        position: absolute;
+        bottom: -25%;
+        right: -20%;
+        transform: translate(25%, -100%);
+    }
+    .stats {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media(max-width:470px) {
+    .transactions {
+        margin-right: 20px;
+    }   
+    .notify {
+        right: 10%;
+        padding: 8px 12px; 
+    }
+    .paypal {
+        right: -20%;
+        top: -60%;
     }
 }
 
